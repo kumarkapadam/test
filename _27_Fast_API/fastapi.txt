@@ -1,0 +1,18 @@
+check version : python --version
+and set the environment:
+========================
+python -m venv filename
+sourse fastapi-env/bin/activate
+
+install fastapi ---- pip install fastapi
+install uvicorn----- pip install uvicorn
+
+asgi ==asyncronise gateway interface
+
+
+form
+
+
+models
+======
+pip install tortoise-orm
