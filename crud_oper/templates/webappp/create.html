@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "webappp/base.html" %}
+ {% block body_block %}
+    <h1>Employee Insertion Form</h1>
+    <form method="POST">
+      <table border="2">
+        {{ form.as_p }}
+      </table>
+        {% csrf_token %}
+        <input type="submit" name="" value="insert Record">
+    </form>
+{% endblock body_block %}

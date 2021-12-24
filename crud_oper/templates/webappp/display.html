@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display_data</title>
+</head>
+<body>
+{%  extends "webappp/base.html" %}
+{% block body_block %}
+<h1>Employee information</h1>
+    <table border="10">
+        <tr>
+            <th>Emplopyee Number</th>
+            <th>Emplopyee Number</th>
+            <th>Emplopyee Number</th>
+            <th>Emplopyee Number</th>
+            <th>Actions</th>
+        </tr>
+        {%  for e in emp %}
+        <tr>
+            <td>{{ e.eno }}</td>
+             <td>{{ e.ename }}</td>
+             <td>{{ e.esalary }}</td>
+             <td>{{ e.eaddress}}</td>
+             <td>
+                 <a href="/update/{{e.id}}">Update</a>
+                 <a href="/update/{{e.id}}">Delete</a>
+
+             </td>
+
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+<a href="/create/" class ="btn btn-success btn-lg">Insert new Employee </a>
+{% endblock body_block %}
+
+</body>
+</html>
