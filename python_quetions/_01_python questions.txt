@@ -1,0 +1,805 @@
+1) What is Python? What are the benefits of using Python?
+---------------------------------------------------------
+what is python
+-------------
+
+python is invented by guido van rossum
+python is an easy to learn powerful programming language.
+the application development process much faster and easier
+multiparadim programming language its refers to procedural and object oriented,functional,logical
+python is a interpreted programming language
+it is portable .easy to learn and huge libraries support
+
+
+#  features of python
+---------------------
+
+easy to learn 
+interpreted language
+crossplatform 
+free to install and open sourse
+object oriented language
+easy to interactive other language
+GUI programming
+  
+Various applications of Python:
+--------------------------------
+Building various GUI based Desktop applications
+Games development
+Web frameworks and applications
+Enterprise or business applications
+Data Science
+
+
+Third-Party Modules:
+---------------------
+Python Package Index (PyPI) comprises a multitude of third-party modules which makes Python integrate with other languages and platforms easily.
+Presence of Libraries:
+--------------------
+Open Source and free
+--------------------
+Python is free for use even for commercial purposes. Moreover, active
+developers can contribute by developing modules and appending them to the existing library
+
+Huge Support Community:
+-----------------------
+Due to lack of official technical support for Python is open-sourced has prompted the development of communities that enrich the resource bank for continued development and adoption of the language.
+
+Easy to learn:
+--------------
+Python is popular for its excellent readability. This means, even a non-programmer can read and comprehend the uncluttered syntax. The PEP 8 guidelines provide a set of rules to help in formatting the cod
+
+User-Friendly data structures:
+------------------------------
+With its built-in data structures, Python can easily construct run-time data structures including Arrays, Lists, tuples, and Files.
+
+Speed
+
+==============================================================================================================================================================
+2) What is PEP 8?
+-------------------------------------
+The PEP is an abbreviation form of Python Enterprise Proposal.
+PEP 8 enhances the readability of the Python
+Naming Convention:
+-----------------
+When we write the code, we need to assign name to many things such as variables, functions, classes, packages, and a lot more things
+
+a = 10  
+var = 10 
+number_of_apple = 5  
+
+Name Style
+----------
+Function	We should use the lowercase words or separates words by the underscore.   	        myfunction, my_function
+Variable	We should use a lowercase letter, words, or separate words to enhance the readability.	 a, var, variable_name
+Class	        The first letter of class name should be capitalized; use camel case. Do not separate words with the underscore.	MyClass, Form, Model
+Method	        We should use a lowercase letter, words, or separate words to enhance readability.	class_method, method
+
+Constant	We should use a short, uppercase letter, words, or separate words to enhance the readability.	                         MYCONSTANT, CONSTANT, MY_CONSTANT
+Module	        We should use a lowercase letter, words, or separate words to enhance the readability.                                          	Module_name.py, module.py
+Package	        We should use a lowercase letter, words, or separate words to enhance the readability. Do not separate words with the underscore.	package, mypackage,
+
+
+Indentation
+---------------
+we use the 4 space for indentation
+x = 5  
+if x ==  5:  
+    print('x is larger than 5')  
+
+
+
+
+
+
+
+==============================================================================================================================================================
+3) What is pickling and unpickling?
+Pickling and unpickling are very important when we have to transfer Python objects from one machine to another.
+Pickling:
+--------
+In Python, pickling is the process by which Python objects are converted to byte streams. Pickling is about serializing the object structure in python.
+# Pickling in Python:
+---------------------------
+
+import pickle
+
+# Python object
+my_list = [11, 'Python', b'Love Python']
+
+# Pickling
+with open("data.pickle","wb") as file_handle:
+    pickle.dump(my_list, file_handle, pickle.HIGHEST_PROTOCOL)
+
+print("Pickling completed!")
+
+
+
+
+Unpickling is the process of retrieving original python objects from the stored string representation i.e from the pickle file. It is the process of converting a byte stream into the python object.
+
+# Unpickling in Python
+
+import pickle
+
+# Pickling
+with open("data.pickle","rb") as file_handle:
+    retrieved_data = pickle.load(file_handle)
+    print(retrieved_data)
+
+==============================================================================================================================================================
+4) How is Python interpreted?
+------------------------------
+Python is an interpreted language, which means the source code of a Python program is converted into bytecode that is then executed by the Python virtual machine
+
+
+5) How is memory managed in Python?
+-------------------------------------
+Python Memory Allocation
+Memory allocation is an essential part of the memory management for a developer. This process basically allots free space in the computer's virtual memory, and there are two types of virtual memory works while executing programs.
+
+Static Memory Allocation:
+Static memory allocation happens at the compile time. For example - In C
+/C++
+Dynamic Memory Allocation:
+
+
+
+
+
+==============================================================================================================================================================
+6) What are the tools that help to find bugs or perform the static analysis?:
+-----------------------------------------------------------------------------
+Pychecker and Pylint are the static analysis tools that help to find bugs in python.
+
+Pychecker is an opensource tool for static analysis that detects the bugs from source code and warns about the style and complexity of the bug.
+
+Pylint is highly configurable and it acts like special programs to control warnings and errors, it is an extensive configuration file Pylint is also an opensource tool for static code analysis it looks for programming errors and is used for coding standard. it checks the length of each programming line. it checks the variable names according to the project style. it can also be used as a standalone program, it also integrates with python IDEs such as Pycharm, Spyder, Eclipse, and Jupyter
+
+Pychecker can be simply installed by using pip package pip install Pychecker if suppose if you use python 3.6 version use upgrade pip install Pychecker --upgrade Pylint can be simply installed by using pip package 
+
+pip install Pylint
+
+if suppose if you use python 3.6 version use upgrade
+
+pip install Pylint --upgrade
+
+
+
+==============================================================================================================================================================
+7) What are Python decorators?:
+----------------------------------
+
+A decorator in Python is a function that takes another function as its argument, and returns yet another function. 
+Decorators can be extremely useful as they allow the extension of an existing function, without any modification to the original function source code.
+
+
+
+8) What is the difference between list and tuple?
+--------------------------------------------------
+	LIST	                                   TUPLE
+      Lists are mutable	                           Tuples are immutable  
+
+Implication of iterations is Time-consuming	   The implication of iterations is comparatively Faster
+
+The list is better for performing operations,      Tuple data type is appropriate for accessing the elements
+such as insertion and deletion.	       
+ 
+Lists consume more memory	                   Tuple consume less memory as compared to the list
+  
+Lists have several built-in methods	           Tuple does not have many built-in methods.
+
+The unexpected changes and errors
+ are more likely to occur	                   In tuple, it is hard to take place
+
+==================================================================================================================================================================
+9) How are arguments passed by value or by reference?
+----------------------------------------------------
+Python uses a mechanism, which is known as "Call-by-Object", sometimes also called "Call by Object Reference" or "Call by Sharing"
+
+If you pass immutable arguments like integers, strings or tuples to a function, the passing acts like Call-by-value.
+It's different, if we pass mutable arguments.
+
+All parameters (arguments) in the Python language are passed by reference.0
+It means if you change what a parameter refers to within a function, the change also reflects back in the calling function
+===================================================================================================================================================================
+10) What is Dict and List comprehensions are?
+----------------------------------------------------------
+listcomprehensions : [ expression for item in iterable ]
+
+[x for x in range(1,11)]
+
+[x for x in range(1,11) if x%2==0]
+
+[x if x>2 else x+1 for x in range(1,11)]
+
+[ expression for item in iterable if conditional ]
+[ expression if condition else stmt for item in iterable ]
+
+
+example::
+
+num = [1,2,3,4]
+mul = num * 10
+print(mul)
+
+
+[x*10 for x in num]
+output:
+--------
+[10,20,30,40]
+
+
+words = ["kumar","yuvi","kiran"]
+
+[x.upper() fo x in words]
+
+
+str1 = "kumar12345"
+[x for x in str1 if x.isdigit()]
+
+
+
+
+list1 = [[1,2,3],[4,5,6],['a'.'b']]
+[x[0] for x in list1]
+[1,4,'a']
+
+
+dictionary:
+-------------
+
+dictionary is a key ,value pairs . keys is unique and immutable and values are mutable.
+
+data = {1:"kumar",2:"kiran,3:"yuvi"}
+
+print(data)
+
+
+
+
+
+
+
+
+
+
+==================================================================================================================================================================
+11) What are built-in type does python provides?
+text_type ----     str
+none type ----     none
+numeric   ----     integer,complex,float
+boolean type ----  boolean
+sequence type ---- list,tuple,dict
+set           ---- set,frozenset
+biarytypes    ---- bytes
+
+
+==================================================================================================================================================================
+12) Explain namespace in Python
+13) What is lambda in Python?
+14) Why lambda forms in python do not have statements?
+15) Explain pass in Python
+-------------------------------
+
+The pass statement is used as a placeholder for future code.
+When the pass statement is executed, nothing happens, but you avoid getting an error when empty code is not allowed.
+Empty code is not allowed in loops, function definitions, class definitions, or in if statements.
+
+class Student:
+    pass
+
+
+
+=================================================================================================================================================================
+16) In Python what are iterators?
+
+Iterator in python is an object that is used to iterate over iterable objects like lists, tuples, dicts, and sets. The iterator object is initialized using the iter() method. It uses the next() method for iteration.
+ 
+
+__iter(iterable)__ method that is called for the initialization of an iterator. This returns an iterator object
+next ( __next__ in Python 3) The next method returns the next value for the iterable. When we use a for loop to traverse any iterable object, internally it uses the iter() method to get an iterator object which further uses next() method to iterate over. This method raises a StopIteration to signal the end of the iteration.
+==================================================================================================================================================================
+17) What is the unittest in Python?
+-----------------------------------
+Unit Testing is the first level of software testing where the smallest testable parts of a software are tested. 
+This is used to validate that each unit of the software performs as designed.
+The unittest test framework is python’s xUnit style framework.
+
+Method:
+White Box Testing method is used for Unit testing.
+=================================================================================================================================================================
+18) Explain slicing in Python?
+Slicing in Python is a feature that enables accessing parts of sequences like strings, tuples, and lists.
+ You can also use them to modify or delete the items of mutable sequences such as lists. Slices can also be applied on third-party objects like NumPy arrays, as well as Pandas series and data frames.
+
+=================================================================================================================================================================
+19) What are generators in Python?
+Python provides a generator to create your own iterator function.
+ A generator is a special type of function which does not return a single value, instead, it returns an iterator object with a sequence of values. 
+In a generator function, a yield statement is used rather than a return statement
+=================================================================================================================================================================
+20) What is docstring in Python?
+-------------------------------------------------------------------------------
+The doc string line should begin with a capital letter and end with a period.
+The first line should be a short description.
+If there are more lines in the documentation string, the second line should be blank, visually separating the summary from the rest of the description.
+The following lines should be one or more paragraphs describing the object’s calling conventions, its side effects, etc.
+Declaring Docstrings: The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes””” just below the class, method or function declaration. All functions should have a docstring.
+
+Accessing Docstrings: The docstrings can be accessed using the __doc__ method of the object or using the help function.
+The below examples demonstrates how to declare and access a docstring.
+
+==================================================================================================================================================================
+21) How can you copy an object in Python?
+22) What is negative index in Python?
+23) How can you convert a number to a string?
+24) What is the difference between xrange and range?
+25) What is module and package in Python?
+26) What are the rules for local and global variables in Python?
+27) How can you share global variables across modules?
+28) Explain how can you make a Python Script executable on Unix?
+29) Explain how to delete a file in Python?
+30) Explain how can you generate random numbers in Python?
+31) How can you access a module written in Python from C?
+32) What is the use of // operator in Python?
+33) Mention five benefits of using Python
+34) Mention the use of the split function in Python
+35) Explain Flask and its benefits:
+--------------------------------------------
+
+Explain what Flask is and its benefits?
+
+
+Flask is a web framework. Flask allows you to build a web application by providing tools, libraries, and technologies. 
+This web application will be a web page, a wiki, or a big web-based calendar application or commercial website.
+ Flask is classified into a micro-framework that means it has little to no dependencies on external libraries
+==============================================================================================================================================================
+36) What is the difference between Django, Pyramid, and Flask?
+
+Flask is a "microframework" primarily aimed at small applications with simpler requirements. 
+Pyramid and Django are both aimed at larger applications, but take different approaches to extensibility and flexibility.
+
+===============================================================================================================================================================
+37) What is Flask-WTF and what are their features?
+The Features include for Flask WTF are: Provides Integration with web forms.
+ Is very secure form as it comes with CSRF token. Provides global CSRF protection. ... Contains File upload that closely works with Flask Uploads
+================================================================================================================================================================
+38) Explain what is the common way for the Flask script to work?
+The common way for the flask script to work is â— Either it should be the import path for your application â— Or the path to a Python file
+================================================================================================================================================================
+39) Explain how you can access sessions in Flask?
+40) Is Flask an MVC model, and if yes give an example showing MVC pattern for your application?
+41) Explain database connection in Python Flask?
+42) If you have multiple Memcache servers, and one of them fails that contain data, will it try to get them?
+43) Explain how you can minimize the Memcached server outages in your Python Development?
+44) Explain what is Dogpile effect? How can you prevent this effect?
+45) Explain how memcached should not be used in your Python project?
+46) What is Python If Statement?
+47) Explain While loop in Python with example
+48) What is enumerate() in Python?
+49) How can you use for loop to repeat the same statement over and again?
+50) What is Tuple Matching in Python?
+51) Explain Dictionary in Python with example
+52) How can you copy the entire dictionary to a new dictionary?
+-----------------------------------------------------------------------------
+They copy() method returns a copy (shallow copy) of the dictionary.
+original_marks = {'Physics':67, 'Maths':87}
+
+copied_marks = original_marks.copy()
+
+
+print('Original Marks:', original_marks)
+print('Copied Marks:', copied_marks)
+
+# Output: Original Marks: {'Physics': 67, 'Maths': 87}
+#         Copied Marks: {'Physics': 67, 'Maths': 87}
+
+====================================================================================================================================================================
+53) How can you Update Python Dictionary?
+-----------------------------------------
+The update() method updates the dictionary with the elements from another dictionary object or from an iterable of key/value pair.
+
+syntax: dict.update([other])
+
+
+marks = {'Physics':67, 'Maths':87}
+internal_marks = {'Practical':48}
+
+marks.update(internal_marks)
+
+
+print(marks)
+
+# Output: {'Physics': 67, 'Maths': 87, 'Practical': 48}
+
+------------------------------------------------------------
+d = {1: "one", 2: "three"}
+d1 = {2: "two"}
+
+# updates the value of key 2
+d.update(d1)
+
+print(d)
+
+d1 = {3: "three"}
+
+# adds element with key 3
+d.update(d1)
+
+print(d)
+----------------------------------------------------------
+update() When Tuple is Passed
+------------------------------
+d = {'x': 2}
+
+d.update(y = 3, z = 0)
+
+print(d)
+Output
+
+{'x': 2, 'y': 3, 'z': 0}
+
+
+
+
+====================================================================================================================================================================
+54) Give example of dictionary items() method
+---------------------------------------------
+Dict = {'Tim': 18,'Charlie':12,'Tiffany':22,'Robert':25}    
+print("Students Name: %s" % list(Dict.items()))
+
+emp_data = {
+    'id': 27,
+    'name': 'kumar',
+    'salary': 27000.00,
+    'loc': 'banglure',
+    'company': 'MCS',
+}
+
+print("employee data   :", emp_data)
+for key,value in emp_data.items():
+       print("key",------,"value")
+
+
+
+=====================================================================================================================================================================
+55) How can you sort elements in Python dictionary?
+
+from collections import OrderedDict
+ 
+dict = {'kumar':'123','kiran':'190','yuvi':'150','shiva':'12'}
+dict1 = OrderedDict(sorted(dict.items()))
+print(dict1)
+
+
+
+======================================================================================================================================================================
+56) Give an example of Dictionary len() and Python List cmp() method
+
+Dict = {'kumar': 18,'kiran':12,'yuvi':22,'santhosh':25}    
+print("Length of the dictionary ",len (Dict))
+
+
+
+team1 = {'kumar': 18,'kiran':12,'yuvi':25}
+team2 = {'sreeram':22}    
+print(cmp(team1, team2))
+======================================================================================================================================================================
+57) What are all dictionary methods:
+
+Python has a set of built-in methods that you can use on dictionaries.
+
+Method	Description
+clear()   ----------        Removes all the elements from the dictionary
+copy()	 ----------         Returns a copy of the dictionary
+fromkeys() ------------	Returns a dictionary with the specified keys and value
+get()	------        Returns the value of the specified key
+items()	 ------       Returns a list containing a tuple for each key value pair
+keys()--------	        Returns a list containing the dictionary's keys
+pop()	-------        Removes the element with the specified key
+popitem()-------	Removes the last inserted key-value pair
+setdefault()----	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()--------	Updates the dictionary with the specified key-value pairs
+values()--------	Returns a list of all the values in the dictionary
+
+
+=======================================================================================================================================================================
+58) Explain Arithmetic operators with example:
+----------------------------------------------
+# arithmetic operators
+"""arithmetic operations used to perform mathematical operations like addition ,subtraction"""
+
+a=int(input("enter a number:"))
+b=int(input("enter b number:"))
+print("addition:",a+b)
+print("subtraction",a-b)
+print("multiplication:",a*b)
+print("division:",a/b)
+print("modulus:",a%b)
+print("floor division:",a//b)
+print("exponential",a**2)
+
+
+
+output::
+======
+enter a number:10
+enter b number:5
+addition: 15
+subtraction 5
+multiplication: 50
+division: 2.0
+modulus: 0
+floor division: 2
+exponential 100
+
+
+
+
+
+
+====================================================================================================================================================================
+59) Give example of logical operators:
+ logical  operator
+
+# and operator
+# or operator
+# not
+
+# and operator
+
+print("logical and operator:",10>5 and 2>3)
+
+a=10
+b=5
+print(a > 2 and b>3) # True
+
+# or operator
+
+print(a >2 or b>3) # True
+print(a<2 or a>3)  # True
+print(a<2 or b>10) # False
+
+
+
+
+
+===================================================================================================================================================================
+60) Explain membership operators with example
+
+membership operator are used test if a sequence is presented in an object
+in:>> returns true
+if a sequence with the specified value is present in the object
+
+not in --->>> returns true
+ if a sequence with the specified value is not present in the objerct
+
+
+
+
+list = [1, 2, 3, 4, 5, 6]
+print(1 in list)  # True
+print('2' in list)  # False
+print("kumar" in list)  # False
+print("kumar" not in list)  # True
+
+
+
+==================================================================================================================================================================
+61) Write code to demonstrate operator precedence in Python:
+62) Explain arrays in Pythons with example
+63) How can you access array elements?
+64) How can you insert elements in array?
+65) How can you delete elements in array?
+66) How can you search and get the index of a value in an array?
+67) How can you reverse array in Python?
+68) Give example to convert array to Unicode
+69) Give an example of a class in Python
+70) Explain Inheritance with example
+71) Give example of Python constructors
+72) How can you access values in string?
+73) Explain all string operators with example
+74) Give example of sleep() function in Python
+75) What is timer method in Python?
+76) Give example of calendar class
+77) Explain Python ZIP file with example
+78) What are the common examples of exceptions in Python?
+79) Explain important Python errors
+80) Explain JSON dumps() in Python with example
+81) Explain in detail JSON to Python (Decoding) with example
+82) Write code for encode() method
+84) Write a Python code for matrix subtraction
+85) Write code for matrix multiplication
+86) Explain slicing of matrix with example
+
+
+
+87) Write Python code to find average via loop
+-----------------------------------------------
+def cal_average(num):
+    sum_num = 0
+    for t in num:
+        sum_num = sum_num + t           
+
+    avg = sum_num / len(num)
+    return avg
+
+print("The average is", cal_average([18,25,3,41,5]))
+
+
+
+
+
+
+88) Write a code for list count
+--------------------------------
+list1 = ['kumar', 'naresh', 'harsha', 'shiva', 'karthik', 'raja']
+name_count = list1.count('kumar')
+print('The count of color: kumar  is ', name_count)
+
+
+
+
+
+
+89) How can you count duplicate elements in a given list?
+------------------------------------------------------------
+MyList = ["b", "a", "a", "c", "b", "a", "c",'a']
+count=0
+for i in MyList:
+    if i == 'a': 
+        count = count + 1  
+print ("the number of a in MyList is :", count)
+
+output:::the number of a in MyList is : 4
+
+method2:
+========
+MyList = ["b", "a", "a", "c", "b", "a", "c",'a']
+counter_b=MyList.count('b')
+print("b count is ",counter_b)
+
+
+==============================================================================================================================================
+90) Write a code to get index of an element in a list using for loop
+--------------------------------------------------------------------
+my_list = ['kumar', 'veera', 'yuvi', 'sam', 'santhosh'] 
+all_indexes = [] 
+for i in range(0, len(my_list)) : 
+    if my_list[i] == 'veera' : 
+        all_indexes.append(i)
+print("Originallist ", my_list)
+print("Indexes for element veera : ", all_indexes)
+
+output::
+-----
+
+Originallist  ['kumar', 'veera', 'yuvi', 'sam', 'santhosh']
+Indexes for element veera :  [1]
+
+
+
+=====================================================================================================================================================
+91) Give an example of Python type()
+------------------------------------
+#integer
+num = 10
+print("type of number is",type(num))
+print("num is :",num)
+
+output:
+
+
+#float
+
+num1= 10.98
+print("type of number is",type(num1))
+print("num is :",num1)
+
+
+#complex
+
+a=8
+b=6
+c =complex(a,b)
+print(type(c))
+print("c is ",c)
+
+x= True
+print(type(x))
+print("x is :",x)
+
+str1 = "hello"
+print("type is ",type(str1))
+print("string  is :",str1)
+
+
+list1 = [1,2,3,'hello',10.09]
+print("list1  type is  :",type(list1))
+print("list1 is ",list1)
+
+type  is : <class 'list'>
+list1 is :[1,2,3,'hello',10.09]
+
+
+tup1 = (1,2,4,"hello",10)
+print("type  is :",type(tup1))
+print("tuple1 is :",tup1)
+
+output:
+======
+type  is : <class 'tuple'>
+tuple1 is : (1, 2, 4, 'hello', 10)
+
+set = {1,3,4,6,"hello",19}
+print("type is :",type(set))
+print("set  is :",set)
+
+output:
+=======
+type is : <class 'set'>
+set  is : {1, 'hello', 3, 4, 19, 6}
+
+
+dict1 = {1:"one",2:"two",3:'three'}
+print("dict1 type is:",type(dict1))
+print("dict1 is :",dict1)
+
+output:
+dict1 type is: <class 'dict'>
+dict1 is : {1: 'one', 2: 'two', 3: 'three'}
+======
+
+
+string  is : hello
+list1  type is  : <class 'list'>
+list1 is  [1, 2, 3, 'hello', 10.09]
+
+
+
+92) How can you print without a newline in Python?:
+---------------------------------------------------
+
+print("Hello ", end="")
+print("welcome to python program")
+
+output::
+
+Hello welcome to python program
+
+
+
+print("Hello ", end="welcome")
+print(" to python program")
+
+output::Hello welcome to python program
+
+
+
+
+
+
+
+
+
+
+
+93) How to print the star(*) pattern without newline and space?
+---------------------------------------------------------------
+for i in range(10):
+    print('*', end="")
+
+output:   **********
+
+
+num = int(input("enter any number:"))
+for i in range(num):
+    print("*",end="")
+
+output::   **********
+================================================================================================================================================================
+
+
+
+
