@@ -453,11 +453,11 @@ makemigrations is responsible to generate SQL code for python model class
 whereas migrate is responsible to execute that SQl code so that table will be created in the database
 
 
-advatage / importance of creating table using migrate command:
------------------------------------------------------------------
--->   if we use migrate command ,then all the django related tables will be created in addition to our application specific tables
---->  if we create the table manually using sql code then only our application specific table will be created and django may not work properly
----> hence we have to create table s with migrate command
+advatage / importance of creating table using migrate command: 
+----------------------------------------------------------------- -->   if we use migrate command ,then all the 
+django related tables will be created in addition to our application specific tables --->  if we create the table 
+manually using sql code then only our application specific table will be created and django may not work properly 
+---> hence we have to create table s with migrate command 
 
 checking django database connection
 ======================================
@@ -605,16 +605,14 @@ class Studentform(form.Form)
 authentication and authorization
 ==================================
 
-authentication :: it is the process of validating the user  ex--signup
-authorization  ::   it is the process of validating/verify  the accessed data of the user and providing the permission to user (or)
-                    it is the process of validating/verify  the accessed data checking whether  its correct or not validations
-ex--signin
+authentication :: it is the process of validating the user  ex--signup authorization  ::   it is the process of 
+validating/verify  the accessed data of the user and providing the permission to user (or) it is the process of 
+validating/verify  the accessed data checking whether  its correct or not validations ex--signin 
 
 
-NOTE : generally in any web application there will be a proper authentication and autherizarion process inorder to acces the content from that web application
-        the user should be a valid user
-        ---
-        inorder to do this activiries in django it will provide the builtin  access using a application auth application(default application)
+NOTE : generally in any web application there will be a proper authentication and autherizarion process inorder to 
+acces the content from that web application the user should be a valid user --- inorder to do this activiries in 
+django it will provide the builtin  access using a application auth application(default application) 
         
         built in module :: contrib.auth
         
@@ -666,10 +664,8 @@ python manage.py create superuser
 """
 
 
-"""
-unit-testing:
-===============
-unit testing is a software testing method by which individual units of source code are tested to determine whether they are fit for use
+"""unit-testing: =============== unit testing is a software testing method by which individual units of source code 
+are tested to determine whether they are fit for use 
 
 why unit test :
 ===============

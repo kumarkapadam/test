@@ -1,0 +1,344 @@
+manual testing :
+
+Module : 1.....testing concepts (theory)   what
+Module :2 ... Testing Project   how
+module :3 : agile process
+
+software :  a software is collection programs that helps us to perform test
+
+
+types of software :
+
+ 1.system software
+   ex: device ddrivers , os , servers ,utilities  etc
+
+ 2. programming software:
+    ex : compilers , debuggers , interpreters
+
+ 3.application software (without interner)
+    ex:web application ,mobile apps ,desktop applications etc
+
+
+
+ what is software testing:
+ ==========================
+
+  software testing is  a part of software development process
+  software tessting is an acrivity to detect and identify the defects in the software
+  the objective of testing is to release quality productto the client
+
+
+  software quality :
+   ====================
+   bug _free
+   delivered on time
+   within budgets
+   meets requirements and or excepectations
+   maintainable
+
+
+
+project vs product:
+if software application is developed for specific customer based on the requirement then it is  called project
+
+if software application is developed for multiple customers based on market requirements then ir called product
+
+
+
+error , bug/defect & failure
+
+error === human mistakes
+bug ===
+
+
+
+why the software has bugs ::
+
+miscommunication or no communication
+software complexity
+programming errors
+changing requirements
+lack of skilled testers
+
+
+
+
+SDLC : software development life
+it is process used by sofrware industry to desing develop and test softwares
+
+p people
+p process
+p prodect
+
+
+SDLC--Soft Development Life Cycle:
+1.Requirements Analysis
+2.Design
+3.Development
+4.Testing
+5.Maintenance
+
+Ex:Waterfall Model:(Liner Model):
+=========================================
+1.Requirements Analysis
+2.System Design
+3.Implementation
+4.Testing
+5.Deployment
+6.Maintenance
+
+Advantages of Waterfall Model:
+==========================================
+1.quality of the product will be good. (It means every stage to maintain detail Documentation).
+2.Since Requirements changes are not allowed,chances of finding dugs will be less.
+3.Initial inverstment is less since the testers are hired at the later stages.
+4.Perferred for small projects where requirements are feezed.
+(It means we can't modifly the Documentation)
+5.Waterfall Model is using long time Projects.
+
+Disadvantages of water model:
+============================================
+1.Requirements changes are not allowed.
+2.If there is defect in Requirement that will be continued in later phases.
+3.Total investment is more because time taking for rework on defect is time
+consuming which leads to high investment.
+4.Testing will start only after coding.
+
+
+
+
+Unit Testing Techniques:
+-----------------------
+1.Basis path testing.(each and every line executed at one time)
+2.Control structure testing.
+3.Conditional coverage. (verify the conditions)
+4.Loops Coverage.
+5.Mutation testing.
+
+
+
+GUI Testing Checklist:
+---------------------
+1.Testing the size,position,width,height of the elements.
+2.Testing of the error messages that are getting displayed.
+3.Testing  the different sections of the screen.
+4.Testing of the font whether it is readable or not.
+5.Testing of the screen in different resolutions with the help of zooming in and zooming out.
+6.Testing the alignment of the texts and other elements like icons,buttons, etc,are in proper place or not.
+7.Testing the colors of the fonts.
+8.Testing whether the image has good clarity or not.
+9.Testing the alignment of the images.
+10.Testing of the spelling.
+11.The user must not get frusted while using the system interface.
+12.Testing whether the interface is attractive or not.
+13.Testing of the scrollbars according to the size of the page if any.
+14.Testing of the disabled fields if any.
+15.Testing of the size of the images.
+16.Testing of the heading whether it is properly aligned or not.
+17.Testing of the color of the hyperlink.
+18.Testing UI elements like button,textbox,textarea,checkbox,radio buttons,drop downs,links etc.
+
+
+
+========================================================================================================================
+
+05-01-2022
+-----------
+static testing techniques
+=========================
+
+1.Review
+2.walkthrough
+inspection
+
+
+dynamic testing techniques:
+========================
+unit testing
+integration testing
+system testing
+
+UAT
+
+
+
+Review
+=======
+
+conducts on documents to ensure correcrness and completenes
+
+
+
+requiements
+
+design reviews
+code reviews
+testplan reviews
+
+test cases reviews etc
+
+
+
+
+
+
+walkthrough::
+============
+ it is a inofrmal review
+
+ author reads the documents or code and discuss with peers
+
+its not pre planned and can be done whenever required
+
+also  walkthrough does not have minutes of the meet
+
+inspection
+=============
+
+
+
+
+its a most formal review type
+
+in which atleast 3-8 proples will sit in the meeting 1-reader 2-writer 3-moderator plus concerned
+inspection will have a proper schedule which will be intimated via email to the concerned developer/tester
+
+
+unit testing :
+==============
+a unit is a single component or module of a software
+unit testing conducts on a single programm or single module
+
+unit testing is white box testing technique
+
+unit testing is conducted by the developers
+unit testing techniques
+basis path testing
+control structure testing
+conditional coverage
+loops coverage
+mutation testing  (reapeatation)
+
+
+
+a=20 b=10
+if a>b
+    print a is largest
+else
+    b is largest
+
+
+# 1 to 5 numbers
+i=1
+max = 5
+ print(1)
+ print(2)
+
+
+
+ while i<=max
+ {
+ print i
+ i=i+1
+ }
+
+
+if user=="kumar" and password =="kumar"
+        allow login
+else:
+        not allow login
+
+
+
+ 
+integration testing:
+=====================
+
+integration testing performed between 2 or more modules
+integration testing focuses on checking data communication between mulriple modules
+
+integrated testing is white box testing technique
+
+
+
+
+types of integration testing:
+
+1.increment integration testing
+2.non-increment integration testing
+
+incremental integration testing : incrementally adding the module and testing tha data flow between the modules
+
+
+first integrate A
+and then integrate B
+
+and then integrate A and B
+
+2 Approches:
+top down
+bottom up
+
+
+Top Down -incremental integration Testing:
+==========================================
+incrementally adding the modules and testing the data flow between the modules and module added is the child of previous module
+
+
+bottom up-incremental integration testing
+=========================================
+incrementally adding the modules and testing the data flow between the modules and module added is the parent  of previous module
+
+
+ sandwich/hybrid Approch :
+ =========================
+ combination of  Top-Down and borrom up approch is called sandwich approch
+
+
+Non-incremental integration Testing:
+=======================================
+
+Adding all the modules in as ingle shot and test the data flow between modules
+
+Draw_backs:
+============
+1.we might miss data flow between some of the modules
+2.if you find any defect we cant understand the root cause of defect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
