@@ -1,0 +1,407 @@
+Manual Testing:
+==========
+software testing::
+
+levels of software Testing
+
+
+unit  testing
+integraion   testing both are white box
+
+system testing
+uat testing:  both block box testing
+
+
+
+
+system testing :
+==============
+
+system testing types
+    system testing
+            gui testing
+            usability testing
+            functional testing
+            non - functional testing
+
+
+
+GUI_Tesitng :
+==============
+
+------>   Graphical User interface testing or gui testing is a process of testing the user interface of an application
+------>   A Graphical user interface includes all the elements such as menus checkbix buttonscolor fonts sizes icons content and images
+
+                1.Testing the size,position,width,height of the elements.
+                2.Testing of the error messages that are getting displayed.
+                3.Testing  the different sections of the screen.
+                4.Testing of the font whether it is readable or not.
+                5.Testing of the screen in different resolutions with the help of zooming in and zooming out.
+                6.Testing the alignment of the texts and other elements like icons,buttons, etc,are in proper place or not.
+                7.Testing the colors of the fonts.
+                8.Testing whether the image has good clarity or not.
+                9.Testing the alignment of the images.
+                10.Testing of the spelling.
+                11.The user must not get frusted while using the system interface.
+                12.Testing whether the interface is attractive or not.
+                13.Testing of the scrollbars according to the size of the page if any.
+                14.Testing of the disabled fields if any.
+                15.Testing of the size of the images.
+                16.Testing of the heading whether it is properly aligned or not.
+                17.Testing of the color of the hyperlink.
+                18.Testing UI elements like button,textbox,textarea,checkbox,radio buttons,drop downs,links etc.
+
+
+usability testing :
+======================
+-----> during this testing validates application provided context aensitive help or not to the user
+------>  checks how easily the end operate the application is called usability testing
+
+
+functional testing :
+=====================
+functionality is nothing but behaviour of application
+functional testing talks about how your feature should work
+
+
+        object properties testing::: check the properties of objects prsent on the application
+                  ex:::enable , disable, visible, focus
+
+
+        database testing ::::: DML opearions data manipulate language
+                                    select
+                                    insert
+                                    delete
+                                    update
+                           views indexes and cursor
+
+                           table level validations (column type ,column length , number of columns)
+
+                           Relational between the tables (normalizarion)
+                           functions
+                           precedures
+                           triggers
+                           indexs
+                           views etc
+
+
+
+
+        error handling:
+                  tester verify the error message while performing incorrect actiom on the application
+                  error messages should be eadle
+                  user unserstandablr simple language
+             incorrect data
+             invalid  user
+
+        calculations /manipulations  testing
+               total balence
+               addition
+
+               tested should verify the calculation
+
+
+        links existence & links execution :: where exactly the links are placed -----links existence
+                    links are navigating to proper page or not ---- links executiion
+
+                    internal links
+                    external links
+                    brokens links
+
+
+        links existence & links execution
+        cookies & sessions              these two are woriking on webapplication
+
+  cookies and sessions :::
+  ========================
+  cookies are temporary files creating by browser while browsing the pages through internet
+  sessions are time slot created by the server .session will be expired after some time
+
+
+
+
+Non_functional Testing ======================
+  once the application functionality is stable then we do non functional testing
+
+  focus on performance , load it can take and security etc
+
+  ---> performance testing (speed of the application)
+            load testing------->  load :::: gradually increasing the load on the application slowly then check the speed the application
+
+            stress testing-------> suddnely increase / decrease the load on the application and check the speed of the application
+
+            volume testing-------->check how much data is able to handle by the application
+
+  -----> security resting------->  how secure our application and
+                         1.authentication ---> users are valid or  not
+                         2.autherization / access control ---> permission of the valid user
+
+
+ ------->recovery testing::::
+                whether the application recovery or not
+                check the system change to abnormal to normal
+
+ --------->compatibility testing
+                   forward compatibility ---> software version 3.7 version now python version 3.10.1
+                   backward "             --->
+                   hardware "   (configuration testing)
+
+
+-------> configuration testing
+--------> installation testing ::: check screen are clear to undetstan
+                                    simple or not
+                                    un-installation
+                                    screen navigating
+    ------>sanitation /garbage testing::::
+           remove unwanted stuff
+           if any application provides extra feartures /functionality then we consider them as bug..
+
+
+
+functional testing                         Non_functional testing
+-------------------------------------------------------------------------------
+validates functionality of software            1.verify the performance ,security,reliability of the software
+
+                                                2. Non _ functionality describes how software works
+functionality describes what  software does
+
+concentrates on user requirements                 3.concentrates on user expectation
+
+functional testing takes place before non_functional  4 . Non-functional testing performed after finishing functional testing
+testing
+
+========================================================================================================================
+
+software testing terminology::
+=============================
+Regression testing::
+-------------------
+Testing conducts on modified build to make sure there will  not be impact on
+existing functionality because of changes like adding/deleting /modifying features
+
+Unit Regression testing:::
+    testing only the changes /modifications done by the developer
+Regional Regression Testing:
+    testing the modified module along with the impacted modules
+    impact analysis meeting conducts to identify impacted modules with QA & DEV
+Full Regression:::
+    testing the main feature @ remaining part of the application
+    ex:: dev has done changes in many modules , instead of identifying impacted modules
+    we perform one round of full  regression
+
+5th---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================================================
+Agile model / Agile methodology / Agile process
+==================================================
+it is an iterative and increment approach
+(repeat again and again)
+
+we will implementing the module(feature) and adding the module
+
+Agile principles:
+==============
+1.customer no nedd to wait for long time
+2.we develop test,and releases a piece of software to the customer with fe w number of features
+3.we can accept /accomodate requirement changes
+
+there will be good communication between customer,business analyst,developers and tester
+
+
+
+
+advantages :
+================
+Requirement changes are allowed in any stage of development or we can accomodate the requirements changes in the middle of developmet
+Release will be very fast(weekly)
+cusromer no need to wait for loong time
+good communication berwween  team
+it is very easy model to adopt
+
+
+disadvantages:
+==========
+less focus on design and documentation since we deliver software vert faster
+
+Scrum:
+=========
+follow the principles of agile
+screum is  framework whixh we build software product by following agile principle
+set of team involved (screum team)
+
+scteum is a groupp of people is called a screum team
+
+
+1.product owner
+2.screum master
+3.dev team
+4.QA team
+
+agile is defined process
+
+1.product owner : writing the feature
+==============
+
+                define the feature of the product
+                prioritize features according to market value
+                adjust featuress and priority every iteration , as needed
+                accept or reject work results.
+
+scrum master : take care of entire process  # solve the issues
+=========
+                  the main role facilitating and driving the agile process
+ scrum master all knows the agile process
+
+ dev team
+ ======
+ develop the software
+
+QA team
+=========
+test the software
+
+==================================================================
+scrum technology:
+==============
+user story : a feature / module in a software
+epic       : collection of user stories
+product backlog : contains list of user stories . prepared ny product owner
+
+
+sprint/iteration : peroid of time to complete the user stories(development and testing), it is decided by the product
+                   owner and team usually 2-4 weeks of time
+
+sprint planning meeting : meating conducts with the team to define what can be
+                          in the spirit and  duration
+
+
+sprint backlog :  list  of commited stories by DEV/QA for specific sprint
+
+scrum meating : mearing conducted by scrum maste everyday 15min . called as scrum call / standup meeting
+             what did you do yesterday
+             what will you do today
+             are there any implements in yourway
+
+
+
+sprint retrospective meeting::
+         conducts meeting after completion of sprint the entire team including both the scrum mastaer
+         and the product owner should participate(only one time)
+
+story point : Rough estimation of user stories , will be given bt DEV & QA in the foem if fibonocci  series
+
+
+0 1 1 2 3 5 8
+
+1 story point == 1 hour / 1 day(6 hours)
+
+
+burndown chart :: shows how/much work remining in the sprint.maintained by rhe scrum master daily
+
+
+
+
+
+The agile :: Scrum Framework at a glance
+========================================
+
+inputs from executives
+team,stakeholders,
+customers ,users
+
+
+
+         PRODUCT OWNER(always interact with customer)
+         product backlog prepared by the owner
+         once product backlog ready sprint planning meeting (all review in the prodect backlog)
+         then after sprint backlog completed  ==== sprint end adate and team deliverable do not change ========1-4 week sprint ==== every 24 hours standap meeting ==== daily scrum meeting ======scrum master nurndown /upp charts
+
+
+      after completig the scrum meeting then fter sprint review(all test cases are executed are not)
+
+
+
+ sprint retrospective meeting :: all work are finished or not and then tha bugs are solved
+
+================================================
+
+Roles
+======
+   product owner
+   scrum master
+   Team
+
+
+
+artefacts
+===========
+product backlog
+sprint backlog
+burndown chart
+
+
+ceremonies
+=============
+sprint planning
+daily scrum
+sprint review
+
+
+scrum board:
+=============
+
+
+stories ====> to do ========>  in progress ========> testing ===========>done
+
+====================================================================================================================
+
+jira tools:
+===========
+ Test management Tools(also features of bug tracking)
+ bug tracking / bug reporting tools
+
+ agile tools:
+ =============
+    jira , version one, teamcity
+    jira == agile management tool
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
