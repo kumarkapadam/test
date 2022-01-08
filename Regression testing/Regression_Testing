@@ -1,0 +1,200 @@
+software testing terminology::
+=============================
+Regression testing::
+-------------------
+Testing conducts on modified build to make sure there will  not be impact on
+existing functionality because of changes like adding/deleting /modifying features
+
+Unit Regression testing:::
+    testing only the changes /modifications done by the developer
+Regional Regression Testing:
+    testing the modified module along with the impacted modules
+    impact analysis meeting conducts to identify impacted modules with QA & DEV
+Full Regression:::
+    testing the main feature @ remaining part of the application
+    ex:: dev has done changes in many modules , instead of identifying impacted modules
+    we perform one round of full  regression
+
+
+Re_testing:::(verifiong in thwe bugss)
+===============
+----> whennever the developer fixed bug, testing will test the bug fix is called re_testing
+----> tester close the bug  if it worked otherwise re-open and send to developer
+----> to  ensure that the defects which were found asnd posted in the earlier build were fixed or nor in the current build
+-----> example
+        __build 1.0 was released test team found some defects  and posted
+        --> build 1.1 was released , now testing the defectss 1.0.1 and 1.0.2 in this build is retesting
+
+
+
+
+example:
+=========
+An application under test has three modules namely Admin,purchase and finance
+
+finance module depends on purchase module
+if a tester a found a bug on purchase module and posted
+once the bug is fixed , the tester needs to do retesting to verify wherher th e bug related to the purchase is fixed or not and
+also tester needs to do tegreession testing to test the finance module which depends on the purchase module
+
+
+                    admin
+
+                     purchase
+
+                       nance
+
+
+
+smoke tessting :
+
+smoke testing is done to make sure the build
+tester ----- installed or not  verifie
+build verification testing --- smoke testing
+sanity testing always developed tester
+
+
+
+
+
+smoke testing is done to  make sure the build we received from the development team is testable /stable or not
+
+smoke testing is performed by both developers and testers
+
+smoke testing ,build may be either stable or unstable
+
+it is a part of basic testing
+
+usually it is done every time there is a new build release
+
+
+
+sanity testing :
+==============
+
+sanity test is done during the release phase to check for the main functionalities of the application without going deeper
+
+
+
+exploratory testing :
+====================
+we have to explore the application ,unserstand m completely and test it
+
+understand the application , identify all possible scenarios , document it then use it for testing
+
+we do exploratory testing when the application ready but there is no requirement
+
+test engineer will do exploratory testing when there is no requirement
+
+Drawbacks :
+===========
+you might misuderstand any feature as bug or any as feature since you do not have requitement
+
+time consuming
+
+if there is any bug in appliction , you will never know about it
+
+adhoc testing ::
+===================
+
+testing application randomly without ant restcases or any busiess requirement document
+
+adhoc testing is an informal testing type with an aim to break the system
+
+tester should have knowledge of application even thou he doesn't have requirement / test cases
+
+this testing is usually an unplanned activity
+
+
+
+money testing / gorilla testing
+====================================
+
+testing application randomly without any test cases or any business requirement document
+
+adhoc testing is an informal testing type with an aim to break the system
+
+tester do not have knowledge of application
+
+suitable for gaming application
+
+
+===================================================================================================================
+# linear search
+
+list1 = [10, 20, 203, 40, 50, 60, 70, 80]
+key = int(input("enter any key:"))
+for i in list1:
+    if key == i:
+        print("key is found", i)
+        break
+else:
+    print("key is not found")
+
+print("----------------using range() -------------")
+list1 = [10, 20, 203, 40, 50, 60, 70, 80]
+key = int(input("enter any key:"))
+for i in range(len(list1)):
+    if key == list1[i]:
+        print("key is found", list1[i], "index is ", i)
+        break
+else:
+    print("key is not found")
+
+print("---------------user functions-------------------")
+
+list2 = []
+
+
+def search(list2, key):
+    for i in range(len(list2)):
+        if key == list2[i]:
+            print("key is found")
+            break
+    else:
+        print("key is not found")
+
+
+num = int(input("how many numbers do you want:"))
+for i in range(num):
+    elem = int(input("enter any number:"))
+    list2.append(elem)
+print("list2 is :", list2)
+key = int(input("enter any key:"))
+search(list2, key)
+
+list2 = []
+list3 = []
+flag = False
+
+
+def search(list2, key):
+    for i in range(len(list2)):
+        if key == list2[i]:
+            flag = True
+            list3.append(i)
+    if flag == True:
+        print("key is found ")
+        for i in list3:
+            print(i)
+    else:
+        print("key is not found")
+
+
+num = int(input("how many numbers do you want:"))
+for i in range(num):
+    elem = int(input("enter any number:"))
+    list2.append(elem)
+print("list2 is :", list2)
+key = int(input("enter any key:"))
+search(list2, key)
+print("======================================================================")
+
+
+
+
+
+
+
+
+
