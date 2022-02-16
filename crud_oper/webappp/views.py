@@ -39,3 +39,7 @@ def delete(request, id):
     employee = Employee.objects.get(id=id)
     employee.delete()
     return redirect("/display/")
+
+
+def index():
+    return None

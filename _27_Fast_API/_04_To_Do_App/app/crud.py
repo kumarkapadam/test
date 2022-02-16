@@ -1,6 +1,7 @@
-from sqlalchemy.orm import Session
+# from sqlalchemy.orm import Session
 
 from . import models, schemas
+from sqlalchemy.orm import Session
 
 
 # this function will get all the todos
