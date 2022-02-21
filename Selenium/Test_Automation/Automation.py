@@ -34,15 +34,8 @@ automation framework struucture
         ConfigFiles
         TestData
         Screenshots
-        Reports
-
-
-
-
-
-
-
-
-
-
+        Report
 """
+
+
+
